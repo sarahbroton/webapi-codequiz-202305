@@ -10,7 +10,7 @@
     flex-direction: column;
     min-height: 100vh;
     justify-content: flex-start;
-    background: linear-gradient(0deg, rgba(19,41,61,1) 0%, rgba(237,245,249,1) 63%);
+    background: linear-gradient(0deg, rgb(237, 106, 244) 0%, rgb(250, 242, 248) 63%);
   }
   
   /* reset score button */
@@ -30,7 +30,7 @@
   
   /* start quiz button + reset score button */
   button {
-    background: radial-gradient(circle, rgba(240,230,140,1) 0%, rgba(187,96,33,0.9542191876750701) 100%);
+    background: radial-gradient(circle, rgb(252, 251, 251) 0%, rgba(10, 0, 0, 0.954) 100%);
     border-radius: 8px;
     color: #13293d;
     cursor: pointer;
@@ -50,8 +50,7 @@
   header {
     padding: 40px;
     text-align: center;
-    background: #13293d;
-    color: #fff;
+    color: black;
     border-bottom:30px #879274;
   }
   
@@ -103,8 +102,7 @@
 /* CODING QUIZ CHALLENGE + ACTUAL # OF SECONDS REMAINING */
   .large-font {
     font-size: 3.5em;
-    text-align:center;
- 
+    text-align:center; 
   }
   
   /* timer box */
@@ -112,7 +110,7 @@
     height: 240px;
     padding: 10px;
     background: #13293d;
-    color: #fff;
+    color: black;
     text-align: center;
   }
   
@@ -154,3 +152,8 @@
     }
    
   }
+
+
+  /* outline: 3px solid limegreen !important;
+background rgba (1, 151, 0, 0.1) !important; */
+
