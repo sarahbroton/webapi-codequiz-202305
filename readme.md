@@ -52,9 +52,11 @@ This practice challenged students by creating a web application from scratch (no
 This includes:
 
 1.  Technical Acceptance Criteria: 40%
+
     Satisfies all of the preceding acceptance criteria.
 >
 2. Deployment: 32%
+    
     Application deployed at live URL.
 
     Application loads with no errors.
@@ -64,6 +66,7 @@ This includes:
     GitHub repository contains application code.
 >
 3. Application Quality: 15%
+    
     Application user experience is intuitive and easy to navigate.
 
     Application user interface style is clean and polished.
@@ -71,6 +74,7 @@ This includes:
     Application resembles the mock-up functionality provided in the Challenge instructions.
 >    
 4. Repository Quality: 13%
+    
     Repository has a unique name.
 
     Repository follows best practices for file structure and naming conventions.
