@@ -2,28 +2,28 @@ var questions = [
 
 {
 
-    question: "Which is NOT a JS data type?"
+    question: "Which is NOT a JS data type?",
     choices: ['pickles', 'strings', 'booleans', 'integers'], 
-    answer: 'pickles'
-}
+    answer: 'pickles',
+},
 
 {
 
-    question: "question?"
+    question: "question?",
     choices: ['item1', 'item2', 'item3', 'item4'], 
-    answer: 'cheese'
-}
+    answer: 'cheese',
+},
 
 {
 
-    question: "question?"
+    question: "question?",
     choices: ['item1', 'item2', 'item3', 'item4'], 
-    answer: 'cheese'
-}
+    answer: 'cheese',
+},
 
 
 ]
 
-questions[currentquestion].question
-questions[currentquestion].choices
-questions[currentquestion].answer
+// questions[currentquestion].question
+// questions[currentquestion].choices
+// questions[currentquestion].answer

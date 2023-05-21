@@ -20,6 +20,10 @@
     line-height: 8px;
     margin-top: 20px;
   }
+
+  #quiz-container {
+    display: none; 
+  }
   
   /* larger container: win/loss counter + reset score button
   .win-loss-container {
