@@ -14,6 +14,8 @@ var timerCount;
 
 // START BUTTON
 
+
+
 // Arrays used to create blanks and letters on screen
 var lettersInChosenWord = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R"];
 var blanksLetters = [""];

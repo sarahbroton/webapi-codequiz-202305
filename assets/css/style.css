@@ -3,7 +3,7 @@
     box-sizing: border-box;
   }
   
-  body {
+  body, main {
     font-family: Arial;
     margin: 0;
     display: flex;
@@ -21,14 +21,14 @@
     margin-top: 20px;
   }
   
-  /* larger container: win/loss counter + reset score button */
+  /* larger container: win/loss counter + reset score button
   .win-loss-container {
     display: flex;
     justify-content: space-between;
     margin-top: 16px;
-  }
+  } */
   
-  /* start quiz button + reset score button */
+  /* start quiz button */
   button {
     background: radial-gradient(circle, rgb(252, 251, 251) 0%, rgba(10, 0, 0, 0.954) 100%);
     border-radius: 8px;
@@ -46,28 +46,28 @@
     margin-top: 0.6em;
   }
   
-  /* TOP: CODING QUIZ THROUGH BREAK UNDER START QUIZ BUTTON */
+  /*HEADER:  View High Scores + Time Left */
   header {
     padding: 40px;
-    text-align: center;
+    text-align: start;
     color: black;
-    border-bottom:30px #879274;
+    /* border-bottom: 10px #879274; */
   }
   
   /* BOTTOM: Win/loss, seconds remaining box to edge of viewport*/
-  main {
+  /* main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-   }
+   
+   } */
   
-   /* box around bottom win/loss, seconds remaining  */
+   /* box around view high scores + timer  */
   section {
     flex: 0 auto;
     padding: 8px;
-    margin-top: 50px;
     background-color: white;
-    border-radius: 8px;
+    /* border-radius: 5px;    */
   }
   
   /* ? */
@@ -78,13 +78,14 @@
   }
   
   /* inside box around bottom win/loss, seconds remaining */
-  .results {
+  /* .results {
     width: 30vw;
     height: 400px;    
-  }
+ 
+  } */
   
   /* inside box around bottom win/loss + another box around blue seconds remaining */
-  .card {
+  /* .card {
     background: radial-gradient(circle, rgba(240,230,140,1) 0%, rgba(187,124,33,0.604079131652661) 100%);
     border: 1px solid #eceff1;
     border-radius: 8px;
@@ -92,12 +93,12 @@
       rgba(60, 64, 67, 0.15) 0 2px 4px 3px;
     margin: auto;
     padding: 20px;
-  }
+  } */
   
 /* NOTHING - REMOVE? */
-  .word-blanks {
+  /* .word-blanks {
     line-height: 360px;
-}
+} */
   
 /* CODING QUIZ CHALLENGE + ACTUAL # OF SECONDS REMAINING */
   .large-font {
@@ -105,13 +106,13 @@
     text-align:center; 
   }
   
-  /* timer box */
+  /* TIME LEFT box */
   .timer {
-    height: 240px;
-    padding: 10px;
-    background: #13293d;
+    /* height: 10px; */
+    /* padding: 5px; */
+    /* background: #13293d; */
     color: black;
-    text-align: center;
+    text-align: end;
   }
   
   /* another time box- ? */
