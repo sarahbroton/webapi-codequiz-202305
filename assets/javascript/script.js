@@ -7,11 +7,12 @@ var quizContainer = document.querySelector("#quiz-container");
 var startContainer = document.querySelector("#start-container"); 
 var questionP = document.getElementById('question');
 var currentQuestion = 0;
-var chosenWord = "";
-var numBlanks = 0;
-var winCounter = 0;
-var loseCounter = 0;
-var isWin = false;
+
+// var chosenWord = "";
+// var numBlanks = 0;
+// var winCounter = 0;
+// var loseCounter = 0;
+// var isWin = false;
 var timer;
 var timeLeft = 75;
 
@@ -21,12 +22,14 @@ function startGame (){
     startContainer.style.display = "none";
     quizContainer.style.display = "block";
     renderQuestions();
-
+    
+    
 
 }
 // recursive looping
 function renderQuestions() {
     questionP.textContent = questions[currentQuestion].question
+    choices
 }
 
 // Arrays used to create blanks and letters on screen
