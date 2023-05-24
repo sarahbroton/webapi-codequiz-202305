@@ -25,14 +25,7 @@
   #quiz-container {
     display: none; 
   }
-  
-  /* larger container: win/loss counter + reset score button
-  .win-loss-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 16px;
-  } */
-  
+    
   /* start quiz button */
   button {
     background: radial-gradient(circle, rgb(252, 251, 251) 0%, rgba(10, 0, 0, 0.954) 100%);
@@ -74,65 +67,7 @@
     justify-content: flex-end;
     align-items: center;
   }
-  
-  /* TIME LEFT box */
-  /* .timer { */
-    /* height: 10px; */
-    /* padding: 5px; */
-    /* background: #13293d; */
-    /* color: black;
-    text-align: end;
-  } */
-
-  /* trying to get the scores/left and timer/right = did not work
-  .highscores {
-    justify-content: flex-start;
-  }
-
-  .timer {
-    justify-content: flex-end;
-  }
-  
- */
-
-   /* box around view high scores + timer  */
-  /* section - creates white box around view high scores + timer {
-    flex: 0 auto;
-    padding: 8px;
-    background-color: white; */
-    /* border-radius: 5px;    */
-  /* } */
-  
-  /* ? */
-  /* .word-guess {
-    width: 55vw;
-    height: 400px;
     
-  } */
-  
-  /* inside box around bottom win/loss, seconds remaining */
-  /* .results {
-    width: 30vw;
-    height: 400px;    
- 
-  } */
-  
-  /* inside box around bottom win/loss + another box around blue seconds remaining */
-  /* .card {
-    background: radial-gradient(circle, rgba(240,230,140,1) 0%, rgba(187,124,33,0.604079131652661) 100%);
-    border: 1px solid #eceff1;
-    border-radius: 8px;
-    box-shadow: rgba(60, 64, 67, 2) 0 1px 2px 0,
-      rgba(60, 64, 67, 0.15) 0 2px 4px 3px;
-    margin: auto;
-    padding: 20px;
-  } */
-  
-/* NOTHING - REMOVE? */
-  /* .word-blanks {
-    line-height: 360px;
-} */
-  
 /* CODING QUIZ CHALLENGE + ACTUAL # OF SECONDS REMAINING */
   .large-font {
     font-size: 3.5em;
@@ -149,17 +84,6 @@
     main {
       flex-direction: column;
     }
-  
-    /* .word-guess,
-    .results {
-      width: 90vw;
-    } */
-  
-    /* section {
-      background-color: white;
-      margin: 20px auto;
-      width: 92vw;
-    } */
   }
   
   @media screen and (max-width: 504px) {
