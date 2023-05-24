@@ -53,10 +53,27 @@
   
   /*HEADER:  View High Scores + Time Left */
   header, .timer {
-    padding: 40px;
+    padding: 10px;
     text-align: start;
     color: black;
-    /* border-bottom: 10px #879274; */
+  }
+
+  header {
+    width: 100vw; 
+  }
+
+  .highscores {
+    display: flex;
+    justify-content: space-between;    
+  }
+
+  .highscores a {
+    padding: 20px;
+  }
+
+  .timer {
+    display: flex; 
+    justify-content: flex-end;
   }
   
   /* TIME LEFT box */
@@ -64,11 +81,20 @@
     /* height: 10px; */
     /* padding: 5px; */
     /* background: #13293d; */
-    color: black;
+    /* color: black;
     text-align: end;
+  } */
+
+  /* trying to get the scores/left and timer/right = did not work
+  .highscores {
+    justify-content: flex-start;
   }
 
-
+  .timer {
+    justify-content: flex-end;
+  }
+  
+ */
 
    /* box around view high scores + timer  */
   section {
@@ -79,11 +105,11 @@
   }
   
   /* ? */
-  .word-guess {
+  /* .word-guess {
     width: 55vw;
     height: 400px;
     
-  }
+  } */
   
   /* inside box around bottom win/loss, seconds remaining */
   /* .results {
@@ -125,16 +151,16 @@
       flex-direction: column;
     }
   
-    .word-guess,
+    /* .word-guess,
     .results {
       width: 90vw;
-    }
+    } */
   
-    section {
+    /* section {
       background-color: white;
       margin: 20px auto;
       width: 92vw;
-    }
+    } */
   }
   
   @media screen and (max-width: 504px) {
