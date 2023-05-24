@@ -6,6 +6,7 @@ var startButton = document.querySelector(".start-button");
 var quizContainer = document.querySelector("#quiz-container"); 
 var startContainer = document.querySelector("#start-container"); 
 var questionP = document.getElementById('question');
+var choicesP = document.getElementById('choicesA', 'choicesB', 'choicesC', 'choicesD'); 
 var currentQuestion = 0;
 
 // var chosenWord = "";
@@ -28,8 +29,10 @@ function startGame (){
 }
 // recursive looping
 function renderQuestions() {
-    questionP.textContent = questions[currentQuestion].question
-    choices
+    questionP.textContent = questions[currentQuestion].question; 
+    choicesP.textContent = choices[currentChoices].choices; 
+    answer.textContent = answer[currentAnswer].answer; 
+
 }
 
 // Arrays used to create blanks and letters on screen

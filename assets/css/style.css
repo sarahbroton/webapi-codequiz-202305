@@ -11,6 +11,7 @@
     min-height: 100vh;
     justify-content: flex-start;
     background: linear-gradient(0deg, rgb(237, 106, 244) 0%, rgb(250, 242, 248) 63%);
+    align-items: center; 
   }
   
   /* reset score button */
@@ -51,21 +52,24 @@
   }
   
   /*HEADER:  View High Scores + Time Left */
-  header {
+  header, .timer {
     padding: 40px;
     text-align: start;
     color: black;
     /* border-bottom: 10px #879274; */
   }
   
-  /* BOTTOM: Win/loss, seconds remaining box to edge of viewport*/
-  /* main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-   
-   } */
-  
+  /* TIME LEFT box */
+  /* .timer { */
+    /* height: 10px; */
+    /* padding: 5px; */
+    /* background: #13293d; */
+    color: black;
+    text-align: end;
+  }
+
+
+
    /* box around view high scores + timer  */
   section {
     flex: 0 auto;
@@ -110,14 +114,6 @@
     text-align:center; 
   }
   
-  /* TIME LEFT box */
-  .timer {
-    /* height: 10px; */
-    /* padding: 5px; */
-    /* background: #13293d; */
-    color: black;
-    text-align: end;
-  }
   
   /* another time box- ? */
   .timer-text {

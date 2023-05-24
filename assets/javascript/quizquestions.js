@@ -2,23 +2,23 @@ var questions = [
 
 {
 
-    question: "Which is NOT a JS data type?",
-    choices: ['pickles', 'strings', 'booleans', 'integers'], 
-    answer: 'pickles',
+    question: "What does SHT stand for?",
+    choices: ['Super Hiking Trail', 'Super Hot Tamales', 'Superior Hiking Trail', 'Stars Hollow Trail'], 
+    answer: 'Superior Hiking Trail',
 },
 
 {
 
-    question: "question?",
-    choices: ['item1', 'item2', 'item3', 'item4'], 
-    answer: 'cheese',
+    question: "How many miles is the SHT?",
+    choices: ['230', '320', '200', '10000'], 
+    answer: '320',
 },
 
 {
 
-    question: "question?",
-    choices: ['item1', 'item2', 'item3', 'item4'], 
-    answer: 'cheese',
+    question: "What lake does the SHT travel along?",
+    choices: ['Superior', 'Sandstone', 'Huron', 'Michigan'], 
+    answer: 'Superior',
 },
 
 
