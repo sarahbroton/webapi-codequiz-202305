@@ -5,7 +5,7 @@
   
   body, main {
     font-family: Arial;
-    margin: 0;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -52,13 +52,10 @@
   }
   
   /*HEADER:  View High Scores + Time Left */
-  header, .timer {
+  header {
     padding: 10px;
     text-align: start;
     color: black;
-  }
-
-  header {
     width: 100vw; 
   }
 
@@ -67,6 +64,7 @@
     justify-content: space-between;    
   }
 
+
   .highscores a {
     padding: 20px;
   }
@@ -74,6 +72,7 @@
   .timer {
     display: flex; 
     justify-content: flex-end;
+    align-items: center;
   }
   
   /* TIME LEFT box */
@@ -97,12 +96,12 @@
  */
 
    /* box around view high scores + timer  */
-  section {
+  /* section - creates white box around view high scores + timer {
     flex: 0 auto;
     padding: 8px;
-    background-color: white;
+    background-color: white; */
     /* border-radius: 5px;    */
-  }
+  /* } */
   
   /* ? */
   /* .word-guess {
