@@ -22,8 +22,10 @@
     margin-top: 20px;
   }
 
+  /* QUIZ Questions: shows multiple choices */
   #quiz-container {
     display: none; 
+    
   }
     
   /* start quiz button */
