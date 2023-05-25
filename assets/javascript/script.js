@@ -13,6 +13,7 @@ var choicesD = document.getElementById('choicesD');
 var quizButtons = document.getElementById ('quiz-buttons')
 var currentQuestion = 0;
 
+
 var timer;
 var timeLeft = 75;
 
@@ -62,37 +63,47 @@ startButton.addEventListener("click", startGame);
 
 // when clicking on an answer...************************************************
 function questionClick(event) {
-  var buttonEl = event.target.value;
+  var buttonEl = event.target;
+  console.log(buttonEl); 
+  
 
   // if the clicked element is not a choice button, ignore
-  if (!buttonEl.matches('choices')) {
+  if (!buttonEl.matches('button')) {
     return;
   }
 
   // check if user guessed wrong
-  if (buttonEl.value !== question[currentQuestion].answer) {
+  if (buttonEl.textContent !== questions[currentQuestion].answer) {
     // penalize time
-    time -= 10;
+    timeLeft -= 10;
 
-    if (time < 0) {
-      time = 0;
+    if (timeLeft < 0) {
+      timeLeft = 0;
     }
     // wrong
-    feedbackEl.textContent = 'Wrong!';
+    // feedbackEl.textContent = 'Wrong!';
+    alert('Wrong!'); 
   } else {
     // right
-    feedbackEl.textContent = 'Correct!';
+    // feedbackEl.textContent = 'Correct!';
+    alert('Correct!');
   }
 
   // move to next question
   currentQuestion++;
 
   // check if we've run out of questions
-  if (time <= 0 || currentQuestion === questions.length) {
+  if (timeLeft <= 0 || currentQuestion >= questions.length) {
     quizEnd();
   } else {
-    getQuestion();
+    renderQuestions();
   }
 }
 
 quizButtons.addEventListener("click", questionClick); 
+
+function quizEnd(){
+  // stop timer
+  // option to record initials - 
+  // 
+}
