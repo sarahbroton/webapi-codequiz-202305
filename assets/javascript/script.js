@@ -1,6 +1,6 @@
 var wordBlank = document.querySelector(".word-blanks");
-var win = document.querySelector(".win");
-var lose = document.querySelector(".lose");
+// var win = document.querySelector(".win");
+// var lose = document.querySelector(".lose");
 var timerElement = document.querySelector("#count");
 var startButton = document.querySelector(".start-button");
 var quizContainer = document.querySelector("#quiz-container"); 
@@ -59,26 +59,21 @@ function timeInterval() {
   }, 1000);
 }
 
-// document.addEventListener("keydown", function(event) {
- 
-// });
-
-
 startButton.addEventListener("click", startGame);
 // document.addEventsListener("click", Correct)
 
 function questionClick(event) {
   var buttonEl = event.target;
 
-  // if the clicked element is not a choice button, do nothing.
-  if (!buttonEl.matches('.choice')) {
+  // if the clicked element is not a choice button, ignore
+  if (!buttonEl.matches('.choices')) {
     return;
   }
 
   // check if user guessed wrong
-  if (buttonEl.value !== questions[currentQuestionIndex].answer) {
+  if (buttonEl.value !== question[currentQuestion].answer) {
     // penalize time
-    time -= 15;
+    time -= 10;
 
     if (time < 0) {
       time = 0;
@@ -91,10 +86,10 @@ function questionClick(event) {
   }
 
   // move to next question
-  currentQuestionIndex++;
+  currentQuestion++;
 
   // check if we've run out of questions
-  if (time <= 0 || currentQuestionIndex === questions.length) {
+  if (time <= 0 || currentQuestion === questions.length) {
     quizEnd();
   } else {
     getQuestion();
