@@ -62,11 +62,10 @@ startButton.addEventListener("click", startGame);
 
 // when clicking on an answer...************************************************
 function questionClick(event) {
-  var buttonEl = event.target;
-
+  var buttonEl = event.target.value;
 
   // if the clicked element is not a choice button, ignore
-  if (!buttonEl.matches('.choices')) {
+  if (!buttonEl.matches('choices')) {
     return;
   }
 
@@ -96,4 +95,4 @@ function questionClick(event) {
   }
 }
 
-quizButtons.addEventsListener("click", questionClick); 
+quizButtons.addEventListener("click", questionClick); 
