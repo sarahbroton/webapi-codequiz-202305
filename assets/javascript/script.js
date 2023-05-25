@@ -10,7 +10,6 @@ var choicesA = document.getElementById('choicesA');
 var choicesB = document.getElementById('choicesB'); 
 var choicesC = document.getElementById('choicesC'); 
 var choicesD = document.getElementById('choicesD'); 
-var answer = document. 
 var currentQuestion = 0;
 
 var timer;
@@ -66,5 +65,38 @@ function timeInterval() {
 
 
 startButton.addEventListener("click", startGame);
-document.addEventsListener("click", Correct)
+// document.addEventsListener("click", Correct)
 
+function questionClick(event) {
+  var buttonEl = event.target;
+
+  // if the clicked element is not a choice button, do nothing.
+  if (!buttonEl.matches('.choice')) {
+    return;
+  }
+
+  // check if user guessed wrong
+  if (buttonEl.value !== questions[currentQuestionIndex].answer) {
+    // penalize time
+    time -= 15;
+
+    if (time < 0) {
+      time = 0;
+    }
+    // wrong
+    feedbackEl.textContent = 'Wrong!';
+  } else {
+    // right
+    feedbackEl.textContent = 'Correct!';
+  }
+
+  // move to next question
+  currentQuestionIndex++;
+
+  // check if we've run out of questions
+  if (time <= 0 || currentQuestionIndex === questions.length) {
+    quizEnd();
+  } else {
+    getQuestion();
+  }
+}
