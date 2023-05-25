@@ -37,7 +37,7 @@ function renderQuestions() {
 
 
 function timeInterval() {
-  setInterval(function () {
+  timer = setInterval(function () {
     // As long as the `timeLeft` is greater than 1
     if (timeLeft > 1) {
       // Set the `textContent` of `timerEl` to show the remaining seconds
@@ -52,9 +52,10 @@ function timeInterval() {
       // Once `timeLeft` gets to 0, set `timerEl` to an empty string
       timerElement.textContent = '';
       // Use `clearInterval()` to stop the timer
-      clearInterval(timeInterval);
+      // clearInterval(timeInterval);
+        clearInterval(timer); 
       // Call the `displayMessage()` function
-      displayMessage();
+      // displayMessage();
     }
   }, 1000);
 }
@@ -63,6 +64,10 @@ startButton.addEventListener("click", startGame);
 
 // when clicking on an answer...************************************************
 function questionClick(event) {
+  if (currentQuestion > 2 ){
+    quizEnd(); 
+    return; 
+  }
   var buttonEl = event.target;
   console.log(buttonEl); 
   
@@ -103,7 +108,13 @@ function questionClick(event) {
 quizButtons.addEventListener("click", questionClick); 
 
 function quizEnd(){
-  // stop timer
-  // option to record initials - 
-  // 
+    console.log('quizEnd'); 
+    clearInterval(timer); 
+  // save time to local storage
+    localStorage.setItem("currentUserScore", timeLeft)
+  var testVariable = localStorage.getItem("currentUserScore")
+  console.log(testVariable); 
+  window.location.replace("highscores.html"); 
+
+  
 }
