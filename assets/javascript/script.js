@@ -3,41 +3,40 @@ var wordBlank = document.querySelector(".word-blanks");
 // var lose = document.querySelector(".lose");
 var timerElement = document.querySelector("#count");
 var startButton = document.querySelector(".start-button");
-var quizContainer = document.querySelector("#quiz-container"); 
-var startContainer = document.querySelector("#start-container"); 
+var quizContainer = document.querySelector("#quiz-container");
+var startContainer = document.querySelector("#start-container");
 var questionP = document.getElementById('question');
 var choicesA = document.getElementById('choicesA');
-var choicesB = document.getElementById('choicesB'); 
-var choicesC = document.getElementById('choicesC'); 
-var choicesD = document.getElementById('choicesD'); 
+var choicesB = document.getElementById('choicesB');
+var choicesC = document.getElementById('choicesC');
+var choicesD = document.getElementById('choicesD');
+var quizButtons = document.getElementById ('quiz-buttons')
 var currentQuestion = 0;
 
 var timer;
 var timeLeft = 75;
 
 // START BUTTON
-function startGame (){
-    timeInterval()
-    startContainer.style.display = "none";
-    quizContainer.style.display = "block";
-    renderQuestions();
-    
-    
-
+function startGame() {
+  timeInterval()
+  startContainer.style.display = "none";
+  quizContainer.style.display = "block";
+  renderQuestions();
 }
+
 // recursive looping
 function renderQuestions() {
-    questionP.textContent = questions[currentQuestion].question; 
-    choicesA.innerHTML = questions[currentQuestion].choices[0]; 
-    choicesB.innerHTML = questions[currentQuestion].choices[1];
-    choicesC.innerHTML = questions[currentQuestion].choices[2];
-    choicesD.innerHTML = questions[currentQuestion].choices[3];
+  questionP.textContent = questions[currentQuestion].question;
+  choicesA.innerHTML = questions[currentQuestion].choices[0];
+  choicesB.innerHTML = questions[currentQuestion].choices[1];
+  choicesC.innerHTML = questions[currentQuestion].choices[2];
+  choicesD.innerHTML = questions[currentQuestion].choices[3];
 
 }
 
 
 function timeInterval() {
-    setInterval(function () {
+  setInterval(function () {
     // As long as the `timeLeft` is greater than 1
     if (timeLeft > 1) {
       // Set the `textContent` of `timerEl` to show the remaining seconds
@@ -60,10 +59,11 @@ function timeInterval() {
 }
 
 startButton.addEventListener("click", startGame);
-// document.addEventsListener("click", Correct)
 
+// when clicking on an answer...************************************************
 function questionClick(event) {
   var buttonEl = event.target;
+
 
   // if the clicked element is not a choice button, ignore
   if (!buttonEl.matches('.choices')) {
@@ -95,3 +95,5 @@ function questionClick(event) {
     getQuestion();
   }
 }
+
+quizButtons.addEventsListener("click", questionClick); 
