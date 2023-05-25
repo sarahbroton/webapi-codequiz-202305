@@ -9,14 +9,10 @@ var questionP = document.getElementById('question');
 var choicesA = document.getElementById('choicesA');
 var choicesB = document.getElementById('choicesB'); 
 var choicesC = document.getElementById('choicesC'); 
-var choicesD = document.getElementById('choicesD');  
+var choicesD = document.getElementById('choicesD'); 
+var answer = document. 
 var currentQuestion = 0;
 
-// var chosenWord = "";
-// var numBlanks = 0;
-// var winCounter = 0;
-// var loseCounter = 0;
-// var isWin = false;
 var timer;
 var timeLeft = 75;
 
@@ -37,43 +33,9 @@ function renderQuestions() {
     choicesB.innerHTML = questions[currentQuestion].choices[1];
     choicesC.innerHTML = questions[currentQuestion].choices[2];
     choicesD.innerHTML = questions[currentQuestion].choices[3];
+
 }
 
-// Arrays used to create blanks and letters on screen
-// var lettersInChosenWord = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R"];
-// var blanksLetters = [""];
-
-// Array of words the user will guess
-// var words = ["variable","array", "modulus", "object", "function", "string", "boolean"];
-// MATH.random
-
-// for loop
-// for (var i = )
-//     split    
-//     concat, 
-//     if/else statements, 
-//     "a"
-//     array = 5 
-
-// for (var i = )
-//     array[a = 0, r = 1, r = 2, a = 3, y = 4]; 
-
-//     change text content to 
-
-// for (let i = 0; i < questions.length; i++) {
-//     const element = array[i];
-    
-// }
-
-
-
-// function timeInterval() {
-//     // code here
-// }
-
-// const timeInterval = () => {
-//     // code here
-// }
 
 function timeInterval() {
     setInterval(function () {
@@ -104,4 +66,5 @@ function timeInterval() {
 
 
 startButton.addEventListener("click", startGame);
+document.addEventsListener("click", Correct)
 
