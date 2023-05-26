@@ -103,8 +103,7 @@ This includes:
 ## Mock-up (Screenshot)
 - The following image shows the web application's appearance and functionality. 
 
-<! -- ADD NEW URL -->
-<img src=https://user-images.githubusercontent.com/130716239/236084885-8b90b2b6-69f6-4417-8e29-d8145602d6f7.png>
+![image](https://github.com/sarahbroton/webapi-codequiz-202305/assets/130716239/59f96795-e911-46ec-9772-2934c5d8243b)
 
 ## Link
 
